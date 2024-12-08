@@ -1,0 +1,14 @@
+.page-enter-active, .page-leave-active {
+  transition: opacity 2s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0;
+}
+* {
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+.animate__animated {
+  animation-fill-mode: both;
+  animation-duration: 1s;
+}

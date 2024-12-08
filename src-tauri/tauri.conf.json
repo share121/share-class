@@ -1,0 +1,50 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "share-class",
+  "version": "0.1.0",
+  "identifier": "com.s121.share-class",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:8080",
+    "beforeDevCommand": "pnpm dev",
+    "beforeBuildCommand": "pnpm generate"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "share 课堂",
+        "width": 1280,
+        "height": 720,
+        "resizable": true,
+        "fullscreen": false,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "category": "Utility",
+    "shortDescription": "帮助课堂更高效",
+    "longDescription": "share 课堂，是 share121 开发的一款帮助课堂更高效的工具",
+    "windows": {
+      "wix": {
+        "language": "zh-CN"
+      },
+      "nsis": {
+        "languages": ["SimpChinese"],
+        "installerIcon": "icons/icon.ico"
+      }
+    }
+  }
+}
