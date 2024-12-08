@@ -58,13 +58,17 @@ useMutationObserver(
     characterData: false,
   }
 );
-const list = shallowRef([
+const list = ref([
   {
-    id: "抽学号",
+    id: "抽学号1",
     component: () => DrawStudentId,
   },
   {
     id: "抽学号2",
+    component: () => DrawStudentId,
+  },
+  {
+    id: "抽学号3",
     component: () => DrawStudentId,
   },
 ]);
